@@ -1,0 +1,245 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --fuenteHeadings: "Poppins", sans-serif;
+    --fuenteTextos: "Roboto", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+
+/* Globales */
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.contenedor-porque-comprar {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h1,h2,h3 {
+    font-family: var(--fuenteHeadings);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* Utilidades */
+
+.text-center {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+
+/* Header */
+
+.logo {
+    margin-top: 3rem;
+}
+
+/* Navegacion */
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #e1e1e1;
+}
+.navegacion__enlace {
+    color: var(--negro);
+    font-size: 2rem;
+    font-family: var(--fuenteTextos);
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url(../img/producto-1.jpg);
+    height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+}
+
+/* Seccion productos */
+.seccion-1 {
+    font-family: var(--fuenteTextos);
+}
+.seccion-1__titulo {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.seccion-destacados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.destacado {
+    background-color: #e1e1e1;
+    padding: 1rem;
+}
+
+.informacion-producto__descripcion {
+    font-size: 1.7rem;
+}
+
+.imagen-producto img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    display: block;
+}
+
+.informacion-producto {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+/* Sobre nosotros */
+
+.seccion-2 {
+    background-image: linear-gradient(to right, transparent 50%, #e1e1e1 50%, #e1e1e1 100%), url(../img/producto-3.jpg);
+    background-position: 80% 88%;
+    background-repeat: no-repeat;
+    background-size: 100%, 200rem;
+    height: 40rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+.grid-nosotros {
+    grid-column: 2 / 3;
+}
+
+.sobre-nosotros__descripcion {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.sobre-nosotros__descripcion,
+.sobre-nosotros__titulo {
+    font-family: var(--fuenteTextos);
+}
+
+/* Seccion Por qué comprar? */
+.seccion-3 {
+    margin-top: 4rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.grid-porque-comprar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.porque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.porque__icono {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.porque__icono:hover {
+    transform: scale(1.2);
+}
+
+.porque p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--fuenteTextos);
+}
+
+/* Seccion contacto */
+
+.seccion-contacto {
+
+}
+
+.contacto-bg {
+    background-image: url(../img/producto-5.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 37%;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -10rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    font-size: 1.8rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+}
+
+.campo__field--textarea {
+    height: 20rem;
+}
+
+.boton {
+    font-family: var(--fuenteHeadings);
+    color: var(--blanco);
+    background-color: var(--negro);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.boton:hover {
+    cursor: pointer;
+}
